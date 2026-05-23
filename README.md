@@ -3,6 +3,13 @@
 A clean, responsive weather app built with vanilla JavaScript that gives you real-time weather data for any city in the world — or just your current location.
 This is my first big JavaScript project working with multiple APIs together, and honestly it taught me more than I expected.
 
+
+
+🔗 **[Live Demo](https://mansityagi548.github.io/weather-tracker/)**
+
+📸 Preview 
+[!preview]()
+
 🚀 Features : 
 
 📍 Auto-detects your location on load using the browser Geolocation API
@@ -35,17 +42,22 @@ Nominatim / OpenStreetMap — reverse geocoding (coords → city name)
 HTML & CSS — no frameworks, no libraries
 
 📁 Project Structure : 
-weather-now/
-├── index.html
 
-├── style.css
+-> index.html
 
-└── js/
-    ├── app.js         # Main controller — events, geolocation, data flow
-    ├── renderHTML.js  # All DOM rendering functions
-    ├── logic.js       # WMO codes, unit helpers, formatters
-    ├── api.js         # All API calls (weather, geocoding, reverse)
-    └── state.js       # Single source of truth for app state
+-> style.css
+
+->  js/
+    
+    app.js         # Main controller — events, geolocation, data flow
+    
+    renderHTML.js  # All DOM rendering functions
+    
+    logic.js       # WMO codes, unit helpers, formatters
+    
+    api.js         # All API calls (weather, geocoding, reverse)
+    
+     state.js       # Single source of truth for app state
 
 🧠 How It Works: 
 
