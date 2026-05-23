@@ -8,7 +8,7 @@ This is my first big JavaScript project working with multiple APIs together, and
 🔗 **[Live Demo](https://mansityagi548.github.io/weather-tracker/)**
 
 📸 Preview 
-[!preview]()
+![Weather Now App](Weather_api_preview.png)
 
 🚀 Features : 
 
