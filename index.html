@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img src="assets/logo.svg" alt="">
+    <div class="dropdown-wrapper">
+      <button class="units-btn" aria-haspopup="true" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-settings-icon lucide-settings">
+          <path
+            d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
+          <circle cx="12" cy="12" r="3" />
+        </svg> <span>Units</span>
+        <img src="assets/icon-dropdown.svg" alt=""> </button>
+
+      <div class="units-menu">
+        <button id="toggle-units" class="menu-action-btn">Switch to Imperial</button>
+
+        <div class="menu-section">
+          <span class="section-label">Temperature</span>
+          <div class="unit-status" id="temp-status">
+            <p class="status-item active" data-unit ="metric">Celsius (°C) <span class="check">✓</span></p>
+            <p class="status-item" data-unit="imperial">Fahrenheit (°F)</p>
+          </div>
+        </div>
+
+
+        <hr class="menu-divider">
+        <div class="menu-section">
+          <span class="section-label">Wind Speed</span>
+          <div class="unit-status" id="wind-status">
+            <p class="status-item active" data-unit="metric">km/h <span class="check">✓</span></p>
+            <p class="status-item" data-unit="imperial"> mph </p>
+          </div>
+        </div>
+
+
+        <hr class="menu-divider">
+        <div class="menu-section">
+          <span class="section-label">Precipitation</span>
+          <div class="unit-status" id="precip-status">
+            <p class="status-item active" data-unit="metric">Millimeters (mm) <span class="check">✓</span></p>
+            <p class="status-item" data-unit="imperial">Inches (in) </p>
+          </div>
+        </div>
+      </div>
+  </header>
+
+
+
+  <h2 id="question">How's the sky looking today?</h2>
+
+  <form class="search-form">
+    <div class="search-container">
+      <label for="city-search" class="sr-only">Search for a place</label>
+      <div class="search-icon-wrapper">
+        <img src="assets/icon-search.svg" alt="">
+      </div>
+      <input type="text" id="city-search" placeholder="Search for a place..." autocomplete="off">
+    </div>
+    <button type="submit" class="search-btn">Search</button>
+  </form>
+
+  <main class="weather-container" role="main">
+    <article class="temperature-stats" aria-labelledby="main-city">
+      <div class="today-temp" role="region" aria-live="polite" aria-atomic="true">
+       
+      </div>
+
+
+      <div class="stats-grid" role="group" aria-label="Current weather statistics" aria-live="polite">
+        <div class="card">
+          <span class="stat-label">Feels Like</span>
+          <p class="stat-value">—</p>
+        </div>
+
+        <div class="card">
+          <span class="stat-label">Humidity</span>
+          <p class="stat-value">—</p>
+        </div>
+
+        <div class="card">
+          <span class="stat-label">Wind</span>
+          <p class="stat-value">—</p>
+        </div>
+
+        <div class="card">
+          <span class="stat-label">Precipitation </span>
+          <p class="stat-value">—</p>
+        </div>
+      </div>
+
+      <p class="daily-forecast">Daily Forecast</p>
+
+      <div class="daily-temp" role="list" aria-label="7-day forecast">
+      </div>
+    </article>
+
+
+   <aside class="hourly-sidebar">
+  <header class="sidebar-header">
+    <h3>Hourly forecast</h3>
+    <select class="day-select" aria-label="Select day for hourly forecast">
+      <option>-</option>
+    </select>
+  </header>
+
+  <div class="hourly-list" role="list" aria-label="Hourly forecast">
+  
+  </div>
+</aside>
+</main>
+
+
+ <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
