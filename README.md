@@ -8,7 +8,13 @@ This is my first big JavaScript project working with multiple APIs together, and
 🔗 **[Live Demo](https://mansityagi548.github.io/weather-tracker/)**
 
 📸 Preview 
+
+
+
 ![Weather Now App](Weather%20api%20preview.png)
+
+
+
 
 🚀 Features : 
 
@@ -29,6 +35,9 @@ This is my first big JavaScript project working with multiple APIs together, and
 
 🔁 Retry on error — if the API fails, one click brings everything back
 
+
+
+
 🛠️ Built With : 
 
 Vanilla JavaScript (ES Modules)
@@ -40,6 +49,9 @@ Open-Meteo Geocoding — city search API
 Nominatim / OpenStreetMap — reverse geocoding (coords → city name)
 
 HTML & CSS — no frameworks, no libraries
+
+
+
 
 📁 Project Structure : 
 
@@ -59,6 +71,10 @@ HTML & CSS — no frameworks, no libraries
     
      state.js       # Single source of truth for app state
 
+
+
+     
+
 🧠 How It Works: 
 
 ->On load the app requests your location. If you allow it, it fetches weather for your coordinates. If you deny, it shows a message and lets you search instead.
@@ -71,6 +87,9 @@ HTML & CSS — no frameworks, no libraries
 
 ->The units toggle instantly re-renders all values without any new API calls.
 
+
+
+
 ⚙️ Running Locally : 
 
 No build tools needed. Just clone and open with a local server:
@@ -79,6 +98,9 @@ git clone https://github.com/your-username/weather-now.git
 cd weather-now
 
 Then open with VS Code Live Server or any static server. Opening index.html directly as a file won't work because ES Modules require a server.
+
+
+
 
 🤝 APIs Used : 
 
@@ -89,6 +111,9 @@ Open-Meteo Geocoding ->  City search -> Free
 Nominatim (OSM) -> Reverse geocoding  -> Free
 
 All APIs used are completely free with no API key required.
+
+
+
 
 💡 What I Learned : 
 
